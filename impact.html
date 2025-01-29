@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact Stories - Abhyudaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #5A287D;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #431E5D;
+        }
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        nav {
+            background-color: #5A287D;
+            padding: 10px 0;
+            border-top: 2px solid #431E5D;
+            border-bottom: 2px solid #431E5D;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+        nav ul li {
+            padding: 10px 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+        }
+        .hero {
+            background: url('impact_hero.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .impact-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .stat {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .stat h2 {
+            color: #5A287D;
+            font-size: 28px;
+        }
+        .stories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .story {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            text-align: left;
+        }
+        .story img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .story h3 {
+            color: #5A287D;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #FFD700;
+            color: #5A287D;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background-color: #FFC107;
+        }
+        footer {
+            background-color: #5A287D;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-top: 4px solid #431E5D;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abhyudaya - Empowering Lives</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="impact.html">Our Impact Stories</a></li>
+                <li><a href="partnerships.html">Partnerships</a></li>
+                <li><a href="work-with-us.html">Work with Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero">Transforming Lives Every Day</div>
+    
+    <div class="container">
+        <div class="impact-stats">
+            <div class="stat">
+                <h2>5,000+</h2>
+                <p>Children Educated</p>
+            </div>
+            <div class="stat">
+                <h2>200</h2>
+                <p>Community Projects</p>
+            </div>
+            <div class="stat">
+                <h2>95%</h2>
+                <p>Program Success Rate</p>
+            </div>
+        </div>
+        
+        <h2>Real Stories, Real Impact</h2>
+        <div class="stories">
+            <div class="story">
+                <img src="story2.jpg" alt="Impact Story 1">
+                <h3>Pushkar's Journey to Education</h3>
+                <p>Once struggling to attend school, Pushkar now excels in academics with the support of Abhyudaya.</p>
+            </div>
+            <div class="story">
+                <img src="story2.jpg" alt="Impact Story 2">
+                <h3>Mayank's Success in Sports</h3>
+                <p>From a small village to the national football championship, Mayank's dreams are coming true.</p>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <h2>Be Part of the Change</h2>
+            <button onclick="window.location.href='donate.html'">Support Us</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Abhyudaya | SPJIMR</p>
+    </footer>
+</body>
+</html>

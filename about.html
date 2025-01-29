@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Abhyudaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #5A287D; /* SPJIMR Purple */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #431E5D;
+        }
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            border-top: 2px solid #431E5D;
+            border-bottom: 2px solid #431E5D;
+            padding: 10px 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+            padding: 10px 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+        }
+        .hero {
+            background: url('about_hero.jpg') no-repeat center center/cover;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px;
+            background-color: #5A287D;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .about-section, .mission-section, .impact-section {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .about-section img {
+            width: 70%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #FFD700;
+            color: #5A287D;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cta button:hover {
+            background-color: #FFC107;
+        }
+        footer {
+            background-color: #5A287D;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-top: 4px solid #431E5D;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abhyudaya - Empowering Lives</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="impact.html">Our Impact Stories</a></li>
+                <li><a href="partnerships.html">Partnerships</a></li>
+                <li><a href="work-with-us.html">Work with Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero">Empowering Underprivileged Students for a Brighter Future</div>
+    
+    <div class="container">
+        <section class="about-section">
+            <img src="mentorship_program.jpg" alt="Mentorship Program">
+            <h2>About Us</h2>
+            <p>Abhyudaya is a transformative mentorship program initiated by SPJIMR. Our focus is to provide holistic after-school education and mentorship to talented yet underprivileged children, whom we call "Sitaras" (meaning "stars"). The program empowers these children with academic guidance, life skills, and opportunities to grow into confident individuals ready to shape their future.</p>
+            <p>We strongly align with the **United Nations Sustainable Development Goals (SDG 4 - Quality Education and SDG 17 - Partnerships for the Goals)** to ensure every child has access to quality education and mentorship that supports their long-term growth.</p>
+        </section>
+        
+        <section class="mission-section">
+            <h2>Our Mission</h2>
+            <p>Through our structured mentorship approach, we aim to bridge the opportunity gap for underprivileged students. Each first-year PGDM student at SPJIMR is assigned a Sitara for a year-long mentorship program, involving home visits, career counseling, and personal development sessions.</p>
+            <p>Beyond academics, Abhyudaya promotes physical and emotional well-being, sports engagement, and vocational training to help children achieve independence and success.</p>
+        </section>
+        
+        <section class="impact-section">
+            <h2>Our Impact</h2>
+            <p>Since its inception in 2008, Abhyudaya has positively impacted over **5,000 children**, supporting them in academics, career aspirations, and overall personal development.</p>
+            <p>Our success stories include children securing scholarships, participating in national-level sports, and becoming first-generation graduates. Annual events like **Hastantaran** (mentor handover ceremony) and **Green Games** (sports event) further strengthen mentor-mentee relationships and community engagement.</p>
+        </section>
+        
+        <div class="cta">
+            <h2>Join Us in Making a Difference</h2>
+            <p>Be part of our journey to transform lives. Your contribution can help a child receive quality education and mentorship.</p>
+            <button onclick="window.location.href='donate.html'">Support Us</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Abhyudaya | SPJIMR | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

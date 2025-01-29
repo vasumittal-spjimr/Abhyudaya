@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Abhyudaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            width: 60%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        form label, form input, form select, form textarea {
+            margin-bottom: 10px;
+            font-size: 16px;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Donate to Abhyudaya</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="impact.html">Impact</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Make a Contribution</h2>
+        <p>Support underprivileged children and be a part of their journey to a better future.</p>
+        <video controls>
+            <source src="donation_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <form action="submit_donation.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="amount">Donation Amount:</label>
+            <select id="amount" name="amount" required>
+                <option value="100">₹100</option>
+                <option value="500">₹500</option>
+                <option value="1000">₹1000</option>
+                <option value="5000">₹5000</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <div id="customAmountDiv" style="display: none;">
+                <label for="customAmount">Enter Custom Amount:</label>
+                <input type="number" id="customAmount" name="customAmount">
+            </div>
+            
+            <label for="paymentMethod">Payment Method:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="upi">UPI</option>
+                <option value="net_banking">Net Banking</option>
+            </select>
+            
+            <label for="taxBenefit">Would you like a tax exemption receipt?</label>
+            <input type="checkbox" id="taxBenefit" name="taxBenefit"> Yes
+            
+            <label for="message">Message (Optional):</label>
+            <textarea id="message" name="message" placeholder="Leave a message for us..."></textarea>
+            
+            <button type="submit">Donate Now</button>
+        </form>
+    </section>
+    
+    <section>
+        <h2>Where Your Donations Go</h2>
+        <p>Your contributions help provide education, mentorship, and healthcare to children in need.</p>
+        <img src="impact_image.jpg" alt="Impact of Donations">
+    </section>
+    
+    <script>
+        document.getElementById("amount").addEventListener("change", function() {
+            var customAmountDiv = document.getElementById("customAmountDiv");
+            if (this.value === "other") {
+                customAmountDiv.style.display = "block";
+            } else {
+                customAmountDiv.style.display = "none";
+            }
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Abhyudaya | SPJIMR</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work With Us - Abhyudaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #5A287D;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #431E5D;
+        }
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        nav {
+            background-color: #5A287D;
+            padding: 10px 0;
+            border-top: 2px solid #431E5D;
+            border-bottom: 2px solid #431E5D;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+        }
+        nav ul li {
+            padding: 10px 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .hero {
+            background: url('work_with_us_hero.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .opportunities {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .opportunity-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .opportunity-card h3 {
+            color: #5A287D;
+            margin: 10px 0;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .cta button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #FFD700;
+            color: #5A287D;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cta button:hover {
+            background-color: #431E5D;
+            color: white;
+        }
+        footer {
+            background-color: #5A287D;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-top: 4px solid #431E5D;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abhyudaya - Empowering Lives</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="impact.html">Our Impact Stories</a></li>
+                <li><a href="partnerships.html">Partnerships</a></li>
+                <li><a href="work-with-us.html">Work with Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="hero">Join Our Mission & Make a Difference</div>
+    
+    <div class="container">
+        <h2>Why Work With Us?</h2>
+        <p>At Abhyudaya, we are dedicated to making a lasting impact. Join our team and be part of meaningful change.</p>
+        
+        <div class="opportunities">
+            <div class="opportunity-card">
+                <h3>Volunteer</h3>
+                <p>Help make a difference by volunteering in education, healthcare, and community development.</p>
+            </div>
+            <div class="opportunity-card">
+                <h3>Internships</h3>
+                <p>Gain valuable experience while contributing to our mission. Open to students and fresh graduates.</p>
+            </div>
+            <div class="opportunity-card">
+                <h3>Full-Time Positions</h3>
+                <p>Looking for a meaningful career? Explore job opportunities with Abhyudaya.</p>
+            </div>
+        </div>
+        
+        <div class="cta">
+            <h2>Start Your Journey with Us</h2>
+            <button onclick="window.location.href='contact.html'">Apply Now</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Abhyudaya | SPJIMR</p>
+    </footer>
+</body>
+</html>

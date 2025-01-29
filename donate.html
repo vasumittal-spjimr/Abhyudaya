@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Abhyudaya</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #5A287D;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #431E5D;
+        }
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #5A287D;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li {
+            padding: 10px 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FFD700;
+            border-bottom: 2px solid #FFD700;
+        }
+        .container {
+            width: 50%;
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: bold;
+            color: #5A287D;
+            padding: 15px;
+            border-bottom: 2px solid #DDD;
+            background: #f0f0f5;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .donation-options {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .donation-options button {
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: none;
+            background-color: #FFD700;
+            color: #5A287D;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .donation-options button:hover {
+            background-color: #FFC107;
+        }
+        .custom-amount {
+            margin-top: 15px;
+            padding: 12px;
+            font-size: 16px;
+            width: 80%;
+            border-radius: 5px;
+            border: 2px solid #5A287D;
+            text-align: center;
+        }
+        .donation-type {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #5A287D;
+        }
+        .tax-benefit {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #5A287D;
+            font-weight: bold;
+        }
+        .captcha {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .additional-features {
+            text-align: left;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #eef0f8;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .donate-button {
+            margin-top: 25px;
+            padding: 15px;
+            background-color: #5A287D;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .donate-button:hover {
+            background-color: #431E5D;
+        }
+        footer {
+            background-color: #5A287D;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            border-top: 4px solid #431E5D;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Abhyudaya - Empowering Lives</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="impact.html">Our Impact Stories</a></li>
+                <li><a href="partnerships.html">Partnerships</a></li>
+                <li><a href="work-with-us.html">Work with Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="steps">Step 1: Choose Donation Amount | Step 2: Select Payment Method | Step 3: Donation Submitted</div>
+        
+        <div class="donation-options">
+            <button>₹4500</button>
+            <button>₹9000</button>
+            <button>₹13500</button>
+            <button>₹18000</button>
+        </div>
+        <input type="number" class="custom-amount" placeholder="Enter Custom Amount">
+        
+        <div class="donation-type">
+            <label><input type="radio" name="donationType" checked> One-Time</label>
+            <label><input type="radio" name="donationType"> Monthly</label>
+        </div>
+        
+        <div class="tax-benefit">Your donations are tax exempt under 80(G).</div>
+        
+        <div class="captcha">Solve this: <b>5 + 3 = </b> <input type="text" style="width: 50px; text-align: center;"></div>
+        
+        <div class="additional-features">
+            <p><b>Other Support Options:</b></p>
+            <ul>
+                <li><input type="checkbox"> Sponsor a meal for ₹100 per child</li>
+                <li><input type="checkbox"> Receive periodic updates about your donation's impact</li>
+                <li><input type="checkbox"> Dedicated support for corporate donors</li>
+            </ul>
+        </div>
+        
+        <button class="donate-button">Donate Now</button>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Abhyudaya | SPJIMR</p>
+    </footer>
+</body>
+</html>
